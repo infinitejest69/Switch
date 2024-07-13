@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #168229;
+  background-image: url(black-felt.png);
+  background-position: center;
+}
+h1 {
+  background-color: #1ca835;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #199730, #1eb439);
+  box-shadow: 20px 20px 60px #188f2d, -20px -20px 60px #20c13d;
+}
+ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 22% auto;
+}
+
+#endTurn {
+  margin-left: 25px;
+  font-size: 1.5em;
+  height: 50px;
+  width: 120px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #199730, #1eb439);
+  box-shadow: 20px 20px 60px #188f2d, -20px -20px 60px #20c13d;
+}
+
+.hand {
+  display: flex;
+}
+.hand h2 {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.cards {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.cards img {
+  height: 175px;
+  width: 125px;
+  margin: 5px;
+}
+
+.rules {
+  background-color: #1ca835;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #199730, #1eb439);
+  box-shadow: 20px 20px 60px #188f2d, -20px -20px 60px #20c13d;
+}
+
+.disabled {
+  opacity: 50%;
+}

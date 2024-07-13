@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+    <link rel="stylesheet" href="switch.css" />
+    <script src="switch.js"></script>
+  </head>
+
+  <body>
+    <h1>Switch</h1>
+    <div class="container">
+      <div class="rules">
+        <p>Welcome to switch</p>
+        <p>The Goal of the Game is to get rid of all your cards first</p>
+        <br />
+        <h2>Rules</h2>
+        <ol>
+          <li>Each Player is Dealt 7 Cards</li>
+          <li>One non trick card Is dealt face up in the middle</li>
+          <li>You MUST play any card that is the same Suite or value as the face up card</li>
+          <li>if you cannot play you must pick a card from the pile to add to your hand</li>
+          <li>if you pick up a playable card you can play it before your turn is over</li>
+          <li>You can play connected run cards i.e 3,4,5 or 5,4,3 of the same suit</li>
+          <li>You can play connected number cards at the same time i.e 5,5,5</li>
+          <li>You can combine all of these rules to remove all your cards i.e play 9,10,jack it back -> jack it back => Ace to 6-H,6-C</li>
+          <li>runs can end on a trick card to carry on your shot . i.e 9,10,jack it back</li>
+        </ol>
+        <h2>Trick cards</h2>
+        <ol>
+          <li>Ace - Is played to check the current face up card to any other card and suit or the same suite</li>
+          <li>You Cannot Ace it to your last card</li>
+          <li>Jack - iss played to jack it back to you and you can play any other jack, suited card or ace</li>
+          <li>8 - playing an 8 is asking to other opponent to play an 8 or wait</li>
+          <li>
+            2 - similar to an 8 but you ask your opponent 2 or pick up 2, if you opponent fails to play a 2 they have to pick up 2 cards, if they play
+            a 2 you have to play a 2 or pick up 4
+          </li>
+          <li>If your turn finished on your shot i.e a jack and you cant play you must pick a card</li>
+        </ol>
+      </div>
+      <div id="game">
+        <div class="cards hand p1">
+          <h2>Player1: <span id="player1"></span></h2>
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+        </div>
+        <div class="cards hand middle">
+          <h2 id="Messsage">Turn: <span id="currentTurn">0</span></h2>
+          <img src="./cards/BACK.png" id="dealBtn" />
+          <img id="pile-card" src="./cards/BACK.png" />
+          <button id="endTurn">End turn</button>
+        </div>
+        <div class="cards hand p2">
+          <h2>Player2: <span id="player2"></span></h2>
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+          <img src="./cards/BACK.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
